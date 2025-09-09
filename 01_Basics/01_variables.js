@@ -3,7 +3,7 @@ let accountEmail = "talalahmad@gmail.com"
 var accountPassword = "12345678"
 accountCity = "Jaipur"
 
-let accountState;
+let accountState;  //accountState is not initialized,undefined
 //accountId= 2 not allowed
 accountEmail ="talal@gmail.com"
 accountCity = "Delhi"

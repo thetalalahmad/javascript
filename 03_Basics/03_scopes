@@ -1,0 +1,59 @@
+var c = 300;    //global function
+let a = 300;    //blocked scoped
+
+if(true){
+    let a =10;      //new block-scoped 'a' (different from the outer one)
+    const b =20;     // blocked scoped
+    console.log("innner", a);   // log 10
+    //var c =20;
+}
+
+console.log("1",a);             
+//console.log(b);
+console.log(c);
+
+
+//*************nested scope************************** */
+function one(){
+    const username ="talal"
+
+    function two(){
+        const website ="Youtube"
+        console.log(username);
+    }
+    //console.log(website);
+    two();
+}
+one();
+
+
+if (true) {
+    const username = "hitesh"
+    if (username === "hitesh") {
+        const website = " youtube"
+         console.log(username + website);
+    }
+     //console.log(website); //out of scope
+}
+// console.log(username);    //out of scope
+
+
+// ++++++++++++++++++ interesting ++++++++++++++++++
+
+
+console.log(addone(5))
+
+function addone(num){
+    return num + 1
+}
+
+
+
+console.log(addTwo(5))
+const addTwo = function(num){
+    return num + 2
+}
+
+// Function Declaration → hoisted completely (safe to call before definition).
+
+// Function Expression (const/let/var) → only variable hoisted, not the function. You can’t call it before the line it’s defined.
