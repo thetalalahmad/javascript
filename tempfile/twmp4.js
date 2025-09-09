@@ -3,11 +3,11 @@ function stringOperations(str) {
 
 
     console.log("Uppercase:", str.toUpperCase());
-    console.log("Lowercase:", str.toLowerCase())
+    console.log("Lowercase:", str.toLowerCase());
 }
 
 let String1 = "Talal";
-stringOperations(String)1;
+stringOperations(String1);
 
 let String2 = new String("JavaScript");
 stringOperations(String2);
