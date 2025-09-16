@@ -14,27 +14,27 @@
 
 //******object handling
 
-// const user = {
-//     username : "Talal",
-//     price: 199
-// }
-// function handleObject(anyObject){
-//     console.log(`Username is ${anyObject.username} and price is ${anyObject.price}`);
-// }
-// handleObject(user);
+const user = {
+    username : "Talal",
+    price: 199
+}
+function handleObject(anyObject){console.log("1",anyObject);
+    console.log(`Username is ${anyObject.username} and price is ${anyObject.price}`);
+}
+handleObject(user);
 
-// direct pass the object
-// handleObject({
-//     username : "sam",
-//     price : 399
-// });
+//direct pass the object
+handleObject({
+    username : "sam",
+    price : 399
+});
 
 //Array Handling 
 
-const myNewArray= [200,400,600];
+// const myNewArray= [200,400,600];
 
-function returnSecondValue(getArray){
-    return getArray[1];
-}
-console.log(returnSecondValue(myNewArray));
-console.log(returnSecondValue([1,2,3,4]));
+// function returnSecondValue(getArray){
+//     return getArray[1];
+// }
+// console.log(returnSecondValue(myNewArray));
+// console.log(returnSecondValue([1,2,3,4]));
