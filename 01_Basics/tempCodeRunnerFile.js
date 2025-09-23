@@ -1,1 +1,4 @@
-console.log(balance.toFixed(1));
+{
+  console.log(z);
+  var z = 100;
+}

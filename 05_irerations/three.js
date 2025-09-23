@@ -1,5 +1,11 @@
 // ["","",""]
 // [{},{},{}]
+/* Key point to remember
+-------------------------for...of ----------------------------
+==>>>>>works only on iterables (like Array, Map, Set, String).
+
+==>>>>>A plain object ({}) is not iterable by default.
+*/
 
 
 //********       for of loop  */
@@ -16,22 +22,34 @@ const greetings = "Hello World";
 //     // }
 //     console.log(greet)
 // }
-const map = new Map()
-map.set("IN", "India")
-map.set("FR", "France")
-map.set("USA", "United State Of America")
-map.set("FR", "France")
-map.set("IN", "India")
-console.log(map);
+// const map = new Map()
+// map.set("IN", "India")
+// map.set("FR", "France")
+// map.set("USA", "United State Of America")
+// map.set("FR", "France")
+// map.set("IN", "India")
+// // console.log(map);
 
-for (const key of map) {
-    console.log(key)
+// for (const key of map) {
+//     console.log(key)
+// }
+
+
+// for (const [key,val] of map) {
+//     console.log(key ,":-" ,val)
+// }
+
+const myObject = { 
+    'game1' : 'NFS',
+    'game2' : 'GTA',
+    'game3' : 'Spiderman'
 }
 
-for (const [key,value] of map) {
-    console.log(key ,":-", value)
-}
 
+// TypeError: myObject is not iterable
+for (const key of myObject) {
+    console.log(key) //myObject is not iterable because for of loop will not work here 
+}
 
 
 

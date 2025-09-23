@@ -52,19 +52,28 @@
 // const newresult = Factorial(4);
 // console.log(newresult);
 
-function factorial(...numbers) {
-  function factorialdata(n) {
+// function factorial(...numbers) {
+//   function factorialdata(n) {
+//     if (n < 0) return NaN;
+//     if (n === 0 || n === 1){return 1;
+//   }
+//     return n * factorialdata(n - 1);
+//   }
+  
+//   return numbers.reduce((result, num) => result * factorialdata(num), 1);
+// }
+
+//console.log(factorial(2));
+
+function factorialdata(n) {
     if (n < 0) return NaN;
     if (n === 0 || n === 1){return 1;
   }
     return n * factorialdata(n - 1);
   }
   
-  return numbers.reduce((result, num) => result * factorialdata(num), 1);
-}
-console.log(factorial(4));
 
-
+  console.log(factorialdata(10));
 
 
 
