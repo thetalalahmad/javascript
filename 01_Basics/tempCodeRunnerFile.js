@@ -1,4 +1,1 @@
-{
-  console.log(z);
-  var z = 100;
-}
+console.log(+"");
